@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/fa-brands-400.ttf",
+      "sha1": "61d77b2a1c90dfd01f9e2d92853007e7a90de937"
+    },
+    {
+      "path": "assets/fonts/fa-regular-400.ttf",
+      "sha1": "fe57b173677888afa2a732d61254bbb04756bc3b"
+    },
+    {
+      "path": "assets/fonts/fa-solid-900.ttf",
+      "sha1": "9f69dff7939c697a9445931b919ed09ac3febc9b"
+    }
+  ]
+}

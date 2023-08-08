@@ -1,0 +1,123 @@
+<View>
+   <Animated.Image
+   source={{
+      uri: 'https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=800',
+   }}
+   style={[{width, resizeMode: 'cover'}, uas]}
+   />
+   <View
+   style={{
+      position: 'absolute',
+      top: 12,
+      right: 15,
+   }}>
+   <FontAwesomeIcon
+      style={{fontSize: 30, color: '#FFF'}}
+      icon={RegularIcons.windowClose}
+   />
+   </View>
+
+   <LinearGradient
+   colors={[
+      'rgba(0,0,0,.003)',
+      'rgba(0,0,0,.3)',
+      'rgba(0,0,0,.3)',
+      'rgba(0,0,0,.3)',
+      'rgba(0,0,0,.4)',
+      'rgba(0,0,0,.5)',
+      'rgba(0,0,0,.6)',
+      'rgba(0,0,0,.7)',
+      'rgba(0,0,0,.8)',
+   ]}
+   style={{
+      position: 'absolute',
+      bottom: 0,
+      paddingHorizontal: 10,
+      height: 100,
+      justifyContent: 'flex-end',
+      width,
+      paddingBottom: 14,
+      gap: 2,
+   }}>
+   <Text style={{color: '#FFF', fontSize: 22, fontWeight: '600'}}>
+      Peppy Panner
+   </Text>
+   <Text style={{color: '#FFF', fontSize: 14, fontWeight: '400'}}>
+      Flavorful trio of juicy paneer, crisp capsicum with spicy red
+      paprika
+   </Text>
+   </LinearGradient>
+</View>
+
+<ScrollView
+   scrollEnabled={false}
+   contentContainerStyle={{
+   paddingHorizontal: 10,
+   paddingBottom: 30,
+   paddingTop: 10,
+   }}>
+   <View>
+   <Text>Change Size</Text>
+   {Array.from({length: 30}, (_, idx) => (
+      <View
+         key={idx}
+         style={{
+         flexDirection: 'row',
+         justifyContent: 'space-between',
+         alignItems: 'center',
+         marginVertical: 10,
+         }}>
+         <View
+         style={{flexDirection: 'row', gap: 10, alignItems: 'center'}}>
+         <View
+            style={{
+               width: 16,
+               height: 16,
+               borderRadius: 16,
+               borderWidth: 1,
+               borderColor: '#444',
+            }}
+         />
+         <Text style={{fontSize: 16}}>Regular Services - 01</Text>
+         </View>
+         <Text>₹ 290</Text>
+      </View>
+   ))}
+   </View>
+</ScrollView>
+
+
+<View
+   style={{
+      position: 'absolute',
+      bottom: 0,
+      height: 120,
+      backgroundColor: '#FFF',
+      width,
+      shadowColor: '#000',
+      shadowOffset: {width: 0, height: 10},
+      shadowOpacity: 1,
+      shadowRadius: 8,
+      paddingHorizontal: 20,
+      paddingVertical: 5,
+      justifyContent: 'center',
+      gap: 8,
+   }}>
+   <Text style={{fontSize: 16}}>Medium | Cheese Burst</Text>
+   <TouchableOpacity
+      style={{
+      width: '95%',
+      height: 40,
+      borderRadius: 6,
+      backgroundColor: '#ef4444',
+      paddingVertical: 4,
+      justifyContent: 'center',
+      alignItems: 'center',
+      alignSelf: 'center',
+      }}
+      activeOpacity={0.7}>
+      <Text style={{color: '#FFF', fontSize: 14, fontWeight: '600'}}>
+      ₹558 | Add +
+      </Text>
+   </TouchableOpacity>
+</View>
