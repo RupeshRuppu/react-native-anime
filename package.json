@@ -1,5 +1,5 @@
 {
-  "name": "anime",
+  "name": "animate",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,13 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@gorhom/bottom-sheet": "^4",
     "lottie-react-native": "^6.1.0",
     "react": "18.2.0",
     "react-native": "0.72.3",
     "react-native-fontawesome": "^7.0.0",
     "react-native-gesture-handler": "^2.12.1",
     "react-native-linear-gradient": "^2.8.2",
-    "react-native-reanimated": "^3.4.2"
+    "react-native-reanimated": "^3.4.2",
+    "react-native-redash": "^18.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
